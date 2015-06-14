@@ -1,0 +1,23 @@
+<ion-view view-title="Search for parties">
+  <ion-content>
+    <ion-list>
+    <ion-toggle ng-model="settings.coolParty" toggle-class="toggle-positive">
+        Cool Party
+    <!--</ion-toggle>-->
+    </ion-list>
+    <ion-list>
+        <div class="item range range-positive">
+            <i class="icon ion-male"></i>
+            <input type="range" name="gender" value="50" min="0" max="100" ng-model="settings.gender">
+            <i class="icon ion-female"></i>
+        </div>
+        <div class="range range-positive">
+          <i class="icon ion-ios7-ionic-outline"></i>
+          <input type="range" name="name">
+          <i class="icon ion-ionic"></i>
+        </div>
+        gender: {{settings.gender}} %
+        
+    </ion-list>
+</ion-content>
+</ion-view>
